@@ -1,0 +1,926 @@
+@charset "utf-8";
+
+
+/*基本設定*/
+
+html{
+	font-size: 100%;
+}
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 1.7em;
+	color: #4B4B4B;
+	position: relative;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #4B4B4B;
+}
+
+
+
+
+/*-------------------------デスクトップ用-------------------------*/
+
+@media screen and (min-width: 960px){
+
+
+/*フォント・サイズ・カラー指定*/
+
+.font-km{
+	font-family: 'Kiwi Maru', serif;
+}
+
+.fs-20{
+	font-size: 20px;
+}
+
+.fs-23{
+	font-size: 23px;
+}
+
+.fs-25{
+	font-size: 25px;
+}
+
+.fs-30{
+	font-size: 30px;
+}
+
+.fs-35{
+	font-size: 35px;
+}
+
+.fs-40{
+	font-size: 40px;
+}
+
+.text-red{
+	color: #B90000;
+}
+
+.text-red02{
+	color: red;
+}
+
+.text-blue01{
+	color: #1B81C7;
+}
+
+.text-orange{
+	color: #FFA844;
+}
+
+
+/*ヘッダー*/
+
+header{
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #53696A;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+.header_logo{
+	width: 22%;
+	min-width: 220px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 35px;
+}
+
+.header_menu{
+	width: 45%;
+	min-width: 500px;
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	display: flex;
+	display:-webkit-flex;
+	justify-content:space-between;
+	font-size: 1.2rem;
+}
+
+header nav ul li{
+	position: relative;
+}
+
+header nav ul li::after{
+	position: absolute;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	bottom: -16px;
+	background: #FFA844;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+header nav ul li:hover::after{
+	visibility: visible;
+	bottom: -6px;
+	opacity: 1;
+}
+
+.header_con{
+	width: 12%;
+	min-width: 150px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 35px;
+}
+
+.header_con:hover{
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.menu_nn{
+	display: none;
+}
+
+.ham{
+	display: none;
+}
+
+
+/*タイトル*/
+
+.title{
+	width: 100%;
+	height: 220px;
+	position: absolute;
+	top: 85px;
+}
+
+.title_img{
+	width: 100%;
+	min-height: 220px;
+	position: absolute;
+	top: 0px;
+}
+
+.title_tx01{
+	font-size: 30px;
+	color: #CBD3CC;
+	font-weight: bold;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title_tx02{
+	font-size: 50px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*メイン*/
+/*上部アナウンス*/
+
+.main{
+	width: 100%;
+	height: 1850px;
+	position: relative;
+	top: 350px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01bx{
+	width: 80%;
+	min-width: 1000px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_01txbx{
+	width: 600px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_02bx{
+	width: 800px;
+	height: 200px;
+	border-radius: 20px;
+	-moz-border-radius : 20px;
+	-webkit-border-radius : 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ECF8FF;
+	margin-top: 80px;
+}
+
+.main_01_tel{
+	width: 230px;
+	position: absolute;
+	top: 50%;
+	left: 12%;
+	transform: translateY(-50%);
+}
+
+.main_01_tel_img{
+	width: 30px;
+}
+
+.main_01_tel_tx{
+	font-size: 2rem;
+}
+
+.main_01_02tx02{
+	width: 400px;
+	height: 150px;
+	position: absolute;
+	top: 30px;
+	left: 400px;
+}
+
+.main_01_txbl{
+	font-weight: bold;
+}
+
+.main_txsp{
+	margin-top: 20px;
+	display:inline-block;
+}
+
+
+/*問い合わせフォーム*/
+
+.main_02bx{
+	width: 80%;
+	min-width: 1000px;
+	height: 1300px;
+	position: absolute;
+	top: 380px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_fm{
+	widht: 100%;
+	height: 70px;
+	background: #B4E3FE;
+}
+
+.main_fmtx{
+	font-size: 30px;
+	line-height: 70px;
+	padding: 0 0 0 85px;
+}
+
+.main_02bx_02txbx{
+	width: 80%;
+	height: 1100px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 130px;
+}
+
+label{
+	height: 65px;
+	line-height: 65px;
+}
+
+.form_rq{
+	width: 55px;
+	margin: 0px 20px 0 10px;
+	vertical-align: -5px;
+}
+
+.fm_sz{
+	width: 250px;
+	height: 20px;
+}
+
+textarea{
+	vertical-align: -240px;
+}
+
+.fm_btn01{
+	display: inline-block;
+	border-radius: 30px;
+	-moz-border-radius : 30px;
+	-webkit-border-radius : 30px;
+	font-size: 15pt;
+	text-align: center;
+	padding: 12px 30px;
+	background: #ffe7cb;
+	line-height: 1em;
+	opacity: 1;
+	box-shadow: 4px 4px 4px #A1A1A1;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+}
+
+.fm_btn01:hover{
+	box-shadow: none;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.border_tp{
+	width: 90%;
+	border-top: solid #4B4B4B 1px;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 30px 0 30px 50px;
+}
+
+.border{
+	width: 90%;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 0 0 30px 50px;
+}
+
+.border_bt{
+	width: 90%;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 0 0 40px 50px;
+}
+
+
+/*サイトマップ*/
+
+.sitemap{
+	width: 100%;
+	height: 500px;
+	background: #EFF8FF;
+	position: relative;
+	top: 350px;
+}
+
+.sitemap_L{
+	width: 30%;
+	min-width: 310px;
+	height: 80%;
+	position: absolute;
+	top: 50px;
+	left: 15%;
+}
+
+.sitemap_logo{
+	width: 90%;
+}
+
+.sitemap_L_tx01{
+	margin-top: 30px;
+}
+
+.sitemap_ic{
+	width: 40px;
+	margin: 30px 20px 0 0;
+}
+
+.sitemap_R{
+	width: 30%;
+	min-width: 310px;
+	height: 80%;
+	position: absolute;
+	top: 50px;
+	right: 10%;
+}
+
+.sitemap_Rtx{
+	margin-top: 20px;
+}
+
+.sitemap_Rtx_h{
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+.sitemap_Rtx_ht{
+	margin-top: 20px;
+}
+
+
+/*フッター*/
+
+.footer{
+	margin-top: 350px;
+}
+
+.footer_01{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #1B81C7;
+    color: #fff;
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+/*-------------------------モバイル用-------------------------*/
+
+@media screen and (max-width: 959px){
+
+
+/*フォント・サイズ・カラー指定*/
+
+.font-km{
+	font-family: 'Kiwi Maru', serif;
+}
+
+.text-red{
+	color: #B90000;
+}
+
+.text-blue01{
+	color: #1B81C7;
+}
+
+.mb_fs-18{
+	font-size: 20px;
+}
+
+.mb_fs-23{
+	font-size: 23px;
+}
+
+.mb_fs-25{
+	font-size: 25px;
+}
+
+.mb_fs-35{
+	font-size: 35px;
+}
+
+.text-orange{
+	color: #FFA844;
+}
+
+
+
+
+/*ヘッダー*/
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #53696A;
+	position: fixed;
+	top: 0;
+	z-index: 998;
+}
+
+header img{
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+
+.header_con{
+	display: none;
+}
+
+.header_menu{
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	right: -60%;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(27,129,199,0.9);
+	transition: .3s;
+}
+
+.header_menu_li a{
+	color: #fff;
+}
+
+.header_menu_li{
+	width: 100%;
+	heigth: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 0;
+}
+
+
+/*ハンバーガーメニュー*/
+
+.ham{
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	background-color: transparent; 
+	border-color: transparent;
+	z-index: 999;
+}
+
+.ham_line{
+	width: 100%;
+	height: 3px;
+	display: block;
+	position: relative;
+	background: #1B81C7;
+	taransition: .2s,
+}
+
+.ham_line::before,
+.ham_line::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1B81C7;
+	transition: .3s;
+}
+
+.ham_line::before{
+	transform: translateY(-12px);
+	left: 0;
+}
+
+.ham_line::after{
+	transform: translateY(12px);
+	left: 0;
+}
+
+.header_menu.open{
+	right: 0;
+}
+
+
+/*メニューを開いた後*/
+
+.ham_line.open{
+	background-color: transparent;
+}
+
+.ham_line.open::before,
+.ham_line.open::after{
+	content: "";
+	background: #C6C6C6;
+	transition: .2s;
+}
+
+.ham_line.open::before{
+	transform: rotate(45deg);
+}
+
+.ham_line.open::after{
+	transform: rotate(-45deg);
+}
+
+
+/*タイトル*/
+
+.title{
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	top: 50px;
+}
+
+.title_img{
+	width: 100%;
+	height: 130px;
+	min-height: 130px;
+	position: absolute;
+	top: 0px;
+}
+
+.title_tx01{
+	width: 90%;
+	text-align: center;
+	font-size: 25px;
+	color: #CBD3CC;
+	font-weight: bold;
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title_tx02{
+	width: 90%;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*メイン*/
+/*上部アナウンス*/
+
+.main{
+	width: 100%;
+	max-width: 800px;
+	height: 2300px;
+	position: relative;
+	top: 250px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01bx{
+	width: 90%;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_01txbx{
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_02bx{
+	width: 100%;
+	height: 250px;
+	border-radius: 20px;
+	-moz-border-radius : 20px;
+	-webkit-border-radius : 20px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ECF8FF;
+	margin-top: 120px;
+}
+
+.main_01_tel{
+	width: 230px;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_tel_img{
+	width: 30px;
+}
+
+.main_01_tel_tx{
+	font-size: 2rem;
+}
+
+.main_01_02tx02{
+	width: 80%;
+	height: 150px;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01_txbl{
+	font-weight: bold;
+}
+
+.main_txsp{
+	margin-top: 20px;
+	display:inline-block;
+}
+
+
+/*問い合わせフォーム*/
+
+.main_02bx{
+	width: 90%;
+	max-width: 700px;
+	height: 1750px;
+	position: absolute;
+	top: 450px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_fm{
+	widht: 100%;
+	height: 60px;
+	background: #B4E3FE;
+}
+
+.main_fmtx{
+	font-size: 25px;
+	line-height: 60px;
+	padding: 0 0 0 20px;
+}
+
+.main_02bx_02txbx{
+	width: 80%;
+	height: 1600px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top:110px;
+}
+
+label{
+	height: 65px;
+	line-height: 65px;
+}
+
+.form_rq{
+	width: 55px;
+	margin: 0px 20px 0 10px;
+	vertical-align: -5px;
+}
+
+.fm_sz{
+	width: 250px;
+	height: 20px;
+}
+
+textarea{
+	vertical-align: -115px;
+}
+
+.fm_btn01{
+	display: inline-block;
+	border-radius: 30px;
+	-moz-border-radius : 30px;
+	-webkit-border-radius : 30px;
+	font-size: 15pt;
+	text-align: center;
+	padding: 12px 30px;
+	background: #ffe7cb;
+	line-height: 1em;
+	opacity: 1;
+	box-shadow: 4px 4px 4px #A1A1A1;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 50px;
+}
+
+.fm_btn01:hover{
+	box-shadow: none;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.border_tp{
+	width: 85%;
+	border-top: solid #4B4B4B 1px;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 30px 0 30px 50px;
+}
+
+.border{
+	width: 85%;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 0 0 30px 50px;
+}
+
+.border_bt{
+	width: 85%;
+	border-bottom: solid #4B4B4B 1px;
+	padding: 0 0 40px 50px;
+}
+
+
+/*サイトマップ*/
+
+.sitemap{
+	width: 100%;
+	height: 750px;
+	background: #EFF8FF;
+	position: relative;
+	top: 250px;
+}
+
+.sitemap_L{
+	width: 80%;
+	max-width: 450px;
+	height: 350px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_logo{
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_L_txmg{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.sitemap_L_tx01{
+	margin-top: 20px;
+}
+
+.mb_fs_sitemap{
+	margin-top: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.sitemap_img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_ic{
+	width: 40px;
+	margin: 20px 20px 0 0;
+}
+
+.sitemap_R{
+	width: 30%;
+	min-width: 310px;
+	height: 300px;
+	position: absolute;
+	top: 420px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.sitemap_Rtx{
+	margin-top: 20px;
+}
+
+.sitemap_Rtx_h{
+	line-height: 35px;
+}
+
+.sitemap_Rtx_ht{
+	margin-top: 10px;
+}
+
+.sitemap_R ul{
+	list-style: none;
+}
+
+
+/*フッター*/
+
+.footer{
+	margin-top: 240px;
+}
+
+.footer_01{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #1B81C7;
+	font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+}

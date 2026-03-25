@@ -1,0 +1,878 @@
+@charset "utf-8";
+
+
+/*基本設定*/
+
+html{
+	font-size: 100%;
+}
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 1.7em;
+	color: #4B4B4B;
+	position: relative;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: #4B4B4B;
+}
+
+
+
+
+/*-------------------------デスクトップ用-------------------------*/
+
+@media screen and (min-width: 960px){
+
+
+/*フォント・サイズ・カラー指定*/
+
+.font-km{
+	font-family: 'Kiwi Maru', serif;
+}
+
+.fs-20{
+	font-size: 20px;
+}
+
+.fs-23{
+	font-size: 23px;
+}
+
+.fs-25{
+	font-size: 25px;
+}
+
+.fs-30{
+	font-size: 30px;
+}
+
+.fs-35{
+	font-size: 35px;
+}
+
+.text-red{
+	color: #B90000;
+}
+
+.text-blue01{
+	color: #1B81C7;
+}
+
+.text-orange{
+	color: #FFA844;
+}
+
+
+/*ヘッダー*/
+
+header{
+	width: 100%;
+	height: 90px;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #53696A;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+.header_logo{
+	width: 22%;
+	min-width: 220px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 35px;
+}
+
+.header_menu{
+	width: 45%;
+	min-width: 500px;
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	display: flex;
+	display:-webkit-flex;
+	justify-content:space-between;
+	font-size: 1.2rem;
+}
+
+header nav ul li{
+	position: relative;
+}
+
+header nav ul li::after{
+	position: absolute;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 2px;
+	bottom: -16px;
+	background: #FFA844;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+header nav ul li:hover::after{
+	visibility: visible;
+	bottom: -6px;
+	opacity: 1;
+}
+
+.header_con{
+	width: 12%;
+	min-width: 150px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 35px;
+}
+
+.header_con:hover{
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.menu_nn{
+	display: none;
+}
+
+.ham{
+	display: none;
+}
+
+
+/*タイトル*/
+
+.title{
+	width: 100%;
+	height: 220px;
+	position: absolute;
+	top: 85px;
+}
+
+.title_img{
+	width: 100%;
+	min-height: 220px;
+	position: absolute;
+	top: 0px;
+}
+
+.title_tx01{
+	font-size: 30px;
+	color: #CBD3CC;
+	font-weight: bold;
+	position: absolute;
+	top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title_tx02{
+	font-size: 50px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 110px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*メイン*/
+
+.main{
+	width: 80%;
+	min-width: 1000px;
+	height: 1830px;
+	position:relative;
+	top: 350px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*生活習慣病*/
+
+.main_tl01{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_tl01_ft{
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.main_01_txbx01{
+	width: 80%;
+	min-width: 900px;
+	height: 330px;
+	margin-top: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01tx01{
+	line-height: 1.5em;
+	position: absolute;
+	top: -5px;
+}
+
+.main_01tx02{
+	width: 60%;
+	position: absolute;
+	top: 100px;
+	left: 40px;
+}
+
+.main_01tx02_01{
+	margin-top: 25px;
+}
+
+.main_01_img{
+	width: 30%;
+	position: absolute;
+	bottom: 40px;
+	right: 0px;
+}
+
+
+/*健診*/
+
+.main_tl02{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+    top: 480px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_02_txbx{
+	width: 80%;
+	min-width: 900px;
+	height: 330px;
+	margin-top: 530px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_02_01tx{
+	width: 60%;
+	position: absolute;
+	top: 0px;
+	left: 40px;
+}
+
+.main_02_img{
+	width: 28%;
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+}
+
+
+/*呼吸器内科*/
+
+
+.main_tl03{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+    top: 960px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_03_txbx{
+	width: 80%;
+	min-width: 900px;
+	height: 530px;
+	margin-top: 1010px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_03_01tx{
+	width: 60%;
+	position: absolute;
+	top: 0px;
+	left: 40px;
+}
+
+.main_03_img{
+	width: 29%;
+	height: 350px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+/*サイトマップ*/
+
+.sitemap{
+	width: 100%;
+	height: 500px;
+	background: #EFF8FF;
+	position: relative;
+	top: 350px;
+}
+
+.sitemap_L{
+	width: 30%;
+	min-width: 310px;
+	height: 80%;
+	position: absolute;
+	top: 50px;
+	left: 15%;
+}
+
+.sitemap_logo{
+	width: 90%;
+}
+
+.sitemap_L_tx01{
+	margin-top: 30px;
+}
+
+.sitemap_ic{
+	width: 40px;
+	margin: 30px 20px 0 0;
+}
+
+.sitemap_R{
+	width: 30%;
+	min-width: 310px;
+	height: 80%;
+	position: absolute;
+	top: 50px;
+	right: 10%;
+}
+
+.sitemap_Rtx{
+	margin-top: 20px;
+}
+
+.sitemap_Rtx_h{
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+.sitemap_Rtx_ht{
+	margin-top: 20px;
+}
+
+
+/*フッター*/
+
+.footer{
+	margin-top: 350px;
+}
+
+.footer_01{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #1B81C7;
+    color: #fff;
+    text-align: center;
+}
+
+
+}
+
+
+
+
+
+/*-------------------------モバイル用-------------------------*/
+
+@media screen and (max-width: 959px){
+
+
+/*フォント・サイズ・カラー指定*/
+
+.font-km{
+	font-family: 'Kiwi Maru', serif;
+}
+
+.text-red{
+	color: #B90000;
+}
+
+.text-blue01{
+	color: #1B81C7;
+}
+
+.mb_fs-18{
+	font-size: 20px;
+}
+
+.mb_fs-25{
+	font-size: 25px;
+}
+
+.text-orange{
+	color: #FFA844;
+}
+
+
+
+
+/*ヘッダー*/
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0 0 10px 0 #53696A;
+	position: fixed;
+	top: 0;
+	z-index: 998;
+}
+
+header img{
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+
+.header_con{
+	display: none;
+}
+
+.header_menu{
+	width: 60%;
+	height: 100vh;
+	position: fixed;
+	right: -60%;
+	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(27,129,199,0.9);
+	transition: .3s;
+}
+
+.header_menu_li a{
+	color: #fff;
+}
+
+.header_menu_li{
+	width: 100%;
+	heigth: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0 0;
+}
+
+
+/*ハンバーガーメニュー*/
+
+.ham{
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	background-color: transparent; 
+	border-color: transparent;
+	z-index: 999;
+}
+
+.ham_line{
+	width: 100%;
+	height: 3px;
+	display: block;
+	position: relative;
+	background: #1B81C7;
+	taransition: .2s,
+}
+
+.ham_line::before,
+.ham_line::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1B81C7;
+	transition: .3s;
+}
+
+.ham_line::before{
+	transform: translateY(-12px);
+	left: 0;
+}
+
+.ham_line::after{
+	transform: translateY(12px);
+	left: 0;
+}
+
+.header_menu.open{
+	right: 0;
+}
+
+
+/*メニューを開いた後*/
+
+.ham_line.open{
+	background-color: transparent;
+}
+
+.ham_line.open::before,
+.ham_line.open::after{
+	content: "";
+	background: #C6C6C6;
+	transition: .2s;
+}
+
+.ham_line.open::before{
+	transform: rotate(45deg);
+}
+
+.ham_line.open::after{
+	transform: rotate(-45deg);
+}
+
+
+/*タイトル*/
+
+.title{
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	top: 50px;
+}
+
+.title_img{
+	width: 100%;
+	height: 130px;
+	min-height: 130px;
+	position: absolute;
+	top: 0px;
+}
+
+.title_tx01{
+	width: 90%;
+	text-align: center;
+	font-size: 25px;
+	color: #CBD3CC;
+	font-weight: bold;
+	position: absolute;
+	top: 23%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.title_tx02{
+	width: 90%;
+	text-align: center;
+	font-size: 35px;
+	color: #fff;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*メイン*/
+
+.main{
+	width: 90%;
+	height: 2420px;
+	position:relative;
+	top: 240px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/*生活習慣病*/
+
+.main_tl01{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_tl01_ft{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.main_01_txbx01{
+	width: 90%;
+	max-width: 600px;
+	height: 570px;
+	margin-top: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01tx01{
+	line-height: 1.5em;
+	position: absolute;
+	top: -5px;
+}
+
+.main_01tx02{
+	width: 100%;
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_01tx02_01{
+	margin-top: 25px;
+}
+
+.main_01_img{
+	width: 60%;
+	position: absolute;
+	bottom: 0px;
+	right: 5%;
+}
+
+
+/*健診*/
+
+.main_tl02{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+    top: 700px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_02_txbx{
+	width: 90%;
+	max-width: 600px;
+	height: 390px;
+	margin-top: 750px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_02_01tx{
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_02_img{
+	width: 28%;
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+}
+
+
+/*呼吸器内科*/
+
+
+.main_tl03{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: 2px solid #4B4B4B;
+	padding-bottom: 5px;
+    position: relative;
+    top: 1210px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_03_txbx{
+	width: 90%;
+	max-width: 600px;
+	height: 28%;
+	margin-top: 1260px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_03_01tx{
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main_03_img{
+	width: 100%;
+	position: absolute;
+	bottom: -50%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+ 	justify-content: space-between;
+}
+
+.main_03_img01{
+	width: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+/*サイトマップ*/
+
+.sitemap{
+	width: 100%;
+	height: 750px;
+	background: #EFF8FF;
+	position: relative;
+	top: 330px;
+}
+
+.sitemap_L{
+	width: 80%;
+	max-width: 450px;
+	height: 350px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_logo{
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_L_txmg{
+	margin-top: 100px;
+	text-align: center;
+}
+
+.sitemap_L_tx01{
+	margin-top: 20px;
+}
+
+.mb_fs_sitemap{
+	margin-top: 20px;
+	font-size: 25px;
+	text-align: center;
+}
+
+.sitemap_img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sitemap_ic{
+	width: 40px;
+	margin: 20px 20px 0 0;
+}
+
+.sitemap_R{
+	width: 30%;
+	min-width: 310px;
+	height: 300px;
+	position: absolute;
+	top: 420px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.sitemap_Rtx{
+	margin-top: 20px;
+}
+
+.sitemap_Rtx_h{
+	line-height: 35px;
+}
+
+.sitemap_Rtx_ht{
+	margin-top: 10px;
+}
+
+.sitemap_R ul{
+	list-style: none;
+}
+
+
+/*フッター*/
+
+.footer{
+	margin-top: 330px;
+}
+
+.footer_01{
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	background: #1B81C7;
+	font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+}
